@@ -1,1 +1,1 @@
-sudo apt  open-vm-tools cockpit -y
+sudo apt install open-vm-tools cockpit -y
