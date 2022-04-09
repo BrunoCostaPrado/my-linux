@@ -3,9 +3,9 @@ wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.17.2.tar.xz
 #un xz
 unxz -v linux-5.17.2.tar.xz
 #un tar
-tar xvf linux-5.17.2.tar.xz
+tar xvf linux-5.17.2.tar
 #cd linux
-cd linux-5.17.2.tar.xz
+cd linux-5.17.2
 #copy config file
 cp -v /boot/config-$(uname -r) .config
 #install GCC
