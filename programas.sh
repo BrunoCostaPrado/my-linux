@@ -6,11 +6,8 @@ sudo apt update
 sudo apt install code
 
 
-sudo rm /etc/apt/preferences.d/nosnap.pref
 sudo apt update
 sudo apt install snapd
-sudo snap install mysql-workbench-community 
-sudo apt-get install mysql-server
 
 
 sudo apt install php -y
