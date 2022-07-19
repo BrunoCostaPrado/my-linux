@@ -50,4 +50,4 @@ sudo apt update
 sudo apt-key add gpg
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 sudo apt update
-sudo apt install docker-ce docker-ce-cli containerd.io -y
+sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
