@@ -39,3 +39,15 @@ sudo apt install -y libwebkit2gtk-4.0-dev \
     libgtk-3-dev \
     libayatana-appindicator3-dev \
     librsvg2-dev 
+    
+    
+    
+    #Docker
+    
+sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties
+wget https://download.docker.com/linux/ubuntu/gpg
+sudo apt update
+sudo apt-key add gpg
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io -y
