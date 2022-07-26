@@ -1,4 +1,6 @@
 sudo apt install htop -y
+sudo apt install clipt -y
+sudo apt install cmake -y
 
 sudo apt install wget apt-transport-https -y
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
