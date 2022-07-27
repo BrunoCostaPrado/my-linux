@@ -1,6 +1,7 @@
 sudo apt install htop -y
-sudo apt install clipt -y
+sudo apt install gedit -y
 sudo apt install cmake -y
+
 
 sudo apt install wget apt-transport-https -y
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -61,4 +62,5 @@ curl -L "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:
 sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get -y install podman
+docker --version
 podman --version
