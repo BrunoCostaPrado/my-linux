@@ -8,11 +8,11 @@ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microso
 sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 sudo apt update
-sudo apt install code
+sudo apt install code -y
 
 
 sudo apt update
-sudo apt install snapd
+sudo apt install snapd -y
 
 
 sudo apt install php -y
@@ -51,7 +51,7 @@ sudo apt install -y libwebkit2gtk-4.0-dev \
     
     #Docker
     
-sudo apt install docker.io
+sudo apt install docker.io -y
 
 
 #Podman
