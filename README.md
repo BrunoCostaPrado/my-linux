@@ -1,6 +1,2 @@
 # my-linux
-Script para automação de atualização, instalação e remoção de pacotes e/ou programas.
-<br>Feito para o pacote apt-get
-<br> Pacman em provação
-
-Adição para outros pacotes como pacman,yum, etc em analise 
+Script para automação de atualização, instalação e remoção de pacotes e/ou programas que utilizam APT packet manager.
