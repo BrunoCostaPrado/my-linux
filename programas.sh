@@ -62,3 +62,8 @@ sudo apt-get -y upgrade
 sudo apt-get -y install podman
 docker --version
 podman --version
+
+
+#K3S
+curl -sfL https://get.k3s.io | sh -
+k3s kubectl get node
