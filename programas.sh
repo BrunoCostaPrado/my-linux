@@ -51,7 +51,7 @@ sudo apt install -y libwebkit2gtk-4.0-dev \
     
     #Docker
     
-sudo apt install docker.io -y
+curl -sSL https://get.docker.com/ | sh
 
 
 #Podman
