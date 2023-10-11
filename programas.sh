@@ -26,14 +26,10 @@ gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D69
 \curl -sSL https://get.rvm.io | bash -s stable --rails
 
 # NodeJS
-curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-sudo apt-get install -y nodejs
+curl -fsSL https://fnm.vercel.app/install | bash
 
-#Yarn
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update && sudo apt install yarn -y
-
+#PNPM
+npm install -g pnpm
 
 sudo apt update 
 
@@ -44,19 +40,24 @@ sudo apt install -y libwebkit2gtk-4.0-dev     build-essential     curl     wget 
     
     #Docker
     
-curl -sSL https://get.docker.com/ | sh
+sudo apt install docker
 
 
 #Podman
-echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
-curl -L "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/Release.key" | sudo apt-key add -
-sudo apt-get update
-sudo apt-get -y upgrade
-sudo apt-get -y install podman
+#echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
+#curl -L "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/Release.key" | sudo apt-key add -
+#sudo apt-get update
+#sudo apt-get -y upgrade
+#sudo apt-get -y install podman
 docker --version
-podman --version
+#podman --version
 
 
 #K3S
 curl -sfL https://get.k3s.io | sh -
 k3s kubectl get node
+
+
+docker --version
+
+sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y && sudo apt update  
