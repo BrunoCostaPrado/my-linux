@@ -1,6 +1,4 @@
-sudo apt install htop -y
-sudo apt install gedit -y
-sudo apt install cmake -y
+sudo apt install htop gedit cmake -y
 
 
 sudo apt install wget apt-transport-https -y
