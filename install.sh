@@ -98,22 +98,9 @@ read in
 if [ $in -gt "0" ]
 then 
 curl -fsSL https://fnm.vercel.app/install | bash
-else
-echo "Pulando NodeJs"
-fi
-clear
-
-
-echo "Deseja instalar PNPM?"
-echo "1 para sim"
-echo "0 para não"
-read in
-
-if [ $in -gt "0" ]
-then 
 npm install -g pnpm
 else
-echo "Pulando PNPM"
+echo "Pulando NodeJs"
 fi
 
 clear
