@@ -97,8 +97,14 @@ read in
 
 if [ $in -gt "0" ]
 then 
-curl -fsSL https://fnm.vercel.app/install | bash
-npm install -g pnpm
+sudo apt-get update
+sudo apt-get install -y ca-certificates curl gnupg
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+sudo apt-get update
+sudo apt-get install nodejs -y
+
+sudo npm install -g pnpm
 else
 echo "Pulando NodeJs"
 fi
