@@ -95,21 +95,6 @@ echo "Pulando Go"
 fi
 clear
 
-echo "Deseja instalar Ruby?"
-echo "1 para sim"
-echo "0 para não"
-read in
-
-if [ $in -gt "0" ]
-then 
-\curl -sSL https://get.rvm.io | bash -s stable
-\curl -sSL https://get.rvm.io | bash -s stable --rails
-
-else
-echo "Pulando Ruby"
-fi
-clear
-
 echo "Deseja instalar NodeJs?"
 echo "1 para sim"
 echo "0 para não"
@@ -131,19 +116,6 @@ fi
 
 clear
 
-echo "Deseja instalar PHP?"
-echo "1 para sim"
-echo "0 para não"
-read in
-
-if [ $in -gt "0" ]
-then 
-sudo apt install php -y
-else
-echo "Pulando PHP"
-fi
-clear
-
 echo "Deseja instalar Python?"
 echo "1 para sim"
 echo "0 para não"
@@ -158,12 +130,10 @@ fi
 
 clear
 
-
-
 sudo apt update
 clear
 
-echo "Deseja instalar Docker?"
+echo "Deseja instalar Docker e K3S?"
 echo "1 para sim"
 echo "0 para não"
 read in
@@ -171,28 +141,15 @@ read in
 if [ $in -gt "0" ]
 then 
 sudo apt install docker
+curl -sfL https://get.k3s.io | sh -
+k3s kubectl get node
 else
 echo "Pulando Docker"
 fi
 clear
 
-echo "Deseja instalar K3S?"
-echo "1 para sim"
-echo "0 para não"
-read in
-
-if [ $in -gt "0" ]
-then 
-curl -sfL https://get.k3s.io | sh -
-k3s kubectl get node
-else
-echo "Pulando K3S"
-fi
-clear
-
 sudo apt install htop gedit cmake -y
 clear
-
 
 echo "Atualizando"
 sudo apt update
