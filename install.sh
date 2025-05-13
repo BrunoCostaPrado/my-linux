@@ -127,6 +127,7 @@ read in
 if [ $in -gt "0" ]
 then 
 sudo apt install python -y
+sudo apt install python3-pip
 else
 echo "Pulando Python"
 fi
