@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo apt install btop gedit cmake -y
+clear
+
 echo "Deseja instalar VMware-Tools"
 echo "1 para sim"
 echo "0 para não"
@@ -148,8 +151,7 @@ echo "Pulando Docker"
 fi
 clear
 
-sudo apt install htop gedit cmake -y
-clear
+
 
 echo "Atualizando"
 sudo apt update
